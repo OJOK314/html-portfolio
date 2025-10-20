@@ -4,14 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=ojtZyf4u1NCz"></script>
+    
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+
+
+    <style>
+  /* custom fade + slide animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  /* wave effect for icons */
+  @keyframes wave {
+    0%, 60%, 100% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-20deg);
+    }
+    30% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+  }
+
+  .wave {
+    display: inline-block;
+    animation: wave 2s infinite;
+  }
+</style>
 </head>
 <body>
 
     <!------header section--------->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow">
-<nav class="bg-blue-700 border-gray-200 dark:bg-gray-900">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow ">
+<nav class="bg-blue-600 border-gray-200 dark:bg-gray-900 ">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
@@ -46,30 +89,36 @@
 
 <!-----main section----->
 <main class="px-6  w-full">
- 
-  <div class="hero bg-base-200 min-h-screen mt-6 ">
-  <div class="hero-content flex-col lg:flex-row items-center lg:justify-between gap-8">
+ <div class="hero bg-base-200 min-h-screen flex items-center mt-6 px-4 lg:px-16">
+  <div class="hero-content flex flex-col lg:flex-row items-center lg:items-center justify-between w-full gap-8">
+
     <!-- Text Section -->
     <div class="max-w-lg text-center lg:text-left space-y-4 animate-fade-in-left">
-        <h4 class="text-xl text-gray-500 dark:text-gray-400">Hello, I'm</h4>
-      <h1 class="text-4xl  text-gray-900 dark:text-white"><span style="font-size: 12px; color: rgb(11, 214, 45);">Hello, I'm</span> <br>
- OJOK ALFRED</h1>
-      <h2 class="text-2xl">A Creative Developer From Gulu, Uganda</h2>
-      <p class="py-4">
-       I build visually stunning and highly functional web applications with a blend of creativity and code.
-I specialize in crafting mobile-first, user-centric experiences using cutting-edge technologies.
+      <h4 class="text-xl text-gray-500 dark:text-gray-400">Hello, I'm</h4>
+      <h1 class="text-4xl text-gray-900 dark:text-white">
+        <span class="text-green-500 text-sm lg:text-base">Hello, I'm</span> <br>
+        <span class="text-red-600">OJOK ALFRED</span>
+      </h1>
+      <h2 class="text-2xl text-gray-700 dark:text-gray-300">A Creative Developer From Gulu, Uganda</h2>
+      <p class="py-4 text-purple-700 dark:text-purple-400 text-sm sm:text-base">
+        I build visually stunning and highly functional web applications with a blend of creativity and code.
+        I specialize in crafting mobile-first, user-centric experiences using cutting-edge technologies.
       </p>
-      
     </div>
 
     <!-- Image Section -->
-     <div class="flex justify-center">
-  <img 
-    src="./photo.jpg"
-    class="object-cover w-full max-w-sm rounded-t-xl md:h-auto md:w-48 md:rounded-none md:rounded-s-xl transition-transform duration-300 hover:scale-110"
-    alt="profile photo"
-  />
+    <div class="flex justify-center lg:justify-end flex-1 animate-fade-in-right">
+      <img 
+        src="./photo.jpg"
+        class="w-86 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 hover:scale-110"
+        alt="profile photo"
+      />
+    </div>
+
+  </div>
 </div>
+
+
 
      
     
@@ -107,106 +156,110 @@ I specialize in crafting mobile-first, user-centric experiences using cutting-ed
 </div>
 
 
-<a href="#"
-   class="flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-md 
-          md:flex-row md:max-w-xl 
-          transform transition duration-300 hover:scale-105 hover:shadow-xl
-          hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    
-    <!-- Image -->
-    <img class="object-cover w-full rounded-t-xl h-64 md:h-auto md:w-48 md:rounded-none md:rounded-s-xl transition-transform duration-300 hover:scale-110"
-         src="laptop.jpg" 
-         alt="">
-
-    <!-- Content -->
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h2>I'm a Developer</h2>
-        <h5 class="mb-2 text-2xl  tracking-tight text-gray-900 dark:text-white">
-            I Can Design and Build <br> Engaging Digital Products
-        </h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Hi there! I’m Alfred, a passionate web developer with a keen eye for <br> design and over 3 years of hands-on experience in frontend <br> technologies. I thrive on turning complex problems into intuitive digital <br>
-             solutions. From wireframes to deployment, 
-            I enjoy bringing ideas to life <br> and collaborating with teams to build impactful experiences.
-        </p>
-    </div>
-</a>
-
-<!----Button------>
-<div>
-<button
-  class="px-4 py-2 mt-2 mb-3 bg-blue-600 text-white font-semibold rounded-full shadow-md ml-6
-         hover:bg-blue-700 hover:scale-110 transition-transform duration-300
-         animate-bounce"
->
-  Contact me
-</button>
-</div>
-
-<!------my skill------->
-<div>
-    <h5 class="mb-2 text-2xl  tracking-tight text-gray-900 dark:text-white self-center">
-            My SKILLS
-        </h5>
 
 
+<!-- Center Wrapper -->
+<div class="flex flex-col items-center space-y-6 px-4 py-8">
 
-        
+  <!-- Card -->
+  <a href="#"
+     class="flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow-md 
+            md:flex-row md:max-w-xl 
+            transform transition duration-300 hover:scale-105 hover:shadow-xl
+            hover:bg-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      
+      <!-- Image -->
+      <img class="object-cover w-full rounded-t-xl h-64 md:h-auto md:w-48 md:rounded-none md:rounded-s-xl transition-transform duration-300 hover:scale-110"
+           src="./laptop.jpg" 
+           alt="">
 
-<div class="w-full max-w-sm p-4 bg-yellow-700 border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 text-orange-500">
-<h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400 text-3xl text-white">frontend</h5>
-<div class="flex items-baseline text-gray-900 dark:text-white">
+      <!-- Content -->
+      <div class="flex flex-col justify-between p-4 leading-normal text-yellow-700">
+          <h2>I'm a Developer</h2>
+          <h5 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">
+              I Can Design and Build <br> Engaging Digital Products
+          </h5>
+          <p class="mb-3 font-normal text-green-700 dark:text-green-400 hover:text-white">
+              Hi there! I’m Alfred, a passionate web developer with a keen eye for <br> design and over 9 months of hands-on experience in frontend <br> technologies. I thrive on turning complex problems into intuitive digital <br>
+              solutions. From wireframes to deployment, 
+              I enjoy bringing ideas to life <br> and collaborating with teams to build impactful experiences.
+          </p>
+      </div>
+  </a>
+
+  <!-- Button -->
+  <button
+    class="px-4 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md
+           hover:bg-blue-700 hover:scale-110 transition-transform duration-300
+           animate-bounce"
+  >
+    Contact me
+  </button>
+
+  <!-- Skills Heading -->
+  <h5 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white text-center">
+      My SKILLS
+  </h5>
 
 </div>
-<ul role="list" class="space-y-5 my-7">
-<li class="flex items-center">
-<svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-</svg>
-<span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">HTML</span>
-</li>
-<li class="flex">
-<svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-</svg>
-<span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">CSS</span>
-</li>
-<li class="flex">
-<svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-</svg>
-<span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">JavaScript</span>
-</li>
 
-<li class="flex">
-<svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-</svg>
-<span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">React</span>
-</li>
 
-<li class="flex">
-<svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-</svg>
-<span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">Tailwaind</span>
-</li>
+   <!-- Center Wrapper -->
+<div class="flex justify-center items-center min-h-screen px-4">
 
-<li class="flex">
-<svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-</svg>
-<span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">Flowbite</span>
-</li>
+  <!-- Skills Card -->
+  <div class="w-full max-w-sm p-4 bg-yellow-700 border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 text-orange-500">
+    <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400 text-3xl text-white">frontend</h5>
+    <div class="flex items-baseline text-gray-900 dark:text-white"></div>
+    <ul role="list" class="space-y-5 my-7">
+      <li class="flex items-center">
+        <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">HTML</span>
+      </li>
+      <li class="flex">
+        <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">CSS</span>
+      </li>
+      <li class="flex">
+        <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">JavaScript</span>
+      </li>
+      <li class="flex">
+        <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">React</span>
+      </li>
+      <li class="flex">
+        <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">Tailwaind</span>
+      </li>
+      <li class="flex">
+        <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">Flowbite</span>
+      </li>
+      <p>UI/UX</p>
+      <li class="flex">
+        <svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">Figma</span>
+      </li>
+    </ul>
+  </div>
 
-<p>UI/UX</p>
-<li class="flex">
-<svg class="shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-<path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-</svg>
-<span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3 text-white">Figma</span>
-</li>
 </div>
+
 
 
 <div class="text-center flex flex-col items-center justify-center py-8">
@@ -265,6 +318,7 @@ I specialize in crafting mobile-first, user-centric experiences using cutting-ed
   </div>
 </div>
 
+
 <div class="flex flex-col items-center justify-center text-center px-4">
   <h1 class="text-5xl mb-4">Get In Touch</h1>
   <p class="max-w-2xl">
@@ -276,35 +330,37 @@ I specialize in crafting mobile-first, user-centric experiences using cutting-ed
 
 <section>
 
-  <!----Loading icons---->
-<div class="flex justify-center gap-3 mt-8">
-  <a href="https://wa.me/256777520905" target="_blank" class="text-3xl text-green-500 hover:scale-125 transition-transform duration-300">
-  <ion-icon name="logo-whatsapp"></ion-icon>
-</a>
-
-  <a href="https://www.linkedin.com/in/ojok-alfred/" target="_blank" class="text-3xl text-blue-600 hover:scale-125 transition-transform duration-300">
-    <ion-icon name="logo-linkedin"></ion-icon>
-
-  <a href="mailto:ojokalferd1996@gmail.com" target="_blank" class="text-3xl text-red-500 hover:scale-125 transition-transform duration-300">
-  <ion-icon name="mail-outline"></ion-icon>
-</a>
-
+ <!-- Social Links -->
+<div class="flex justify-center gap-6 mt-6 fade-in-up">
+  <a href="https://wa.me/256777520905" target="_blank" class="text-3xl text-green-500 hover:scale-125 transition-transform duration-300 wave">
+    <ion-icon name="logo-whatsapp"></ion-icon>
   </a>
-  <a href="https://github.com/OJOK314" target="_blank" class="text-3xl text-gray-800 hover:scale-125 transition-transform duration-300">
+
+  <a href="https://www.linkedin.com/in/ojok-alfred/" target="_blank" class="text-3xl text-blue-600 hover:scale-125 transition-transform duration-300 wave">
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </a>
+
+  <a href="mailto:ojokalferd1996@gmail.com" target="_blank" class="text-3xl text-red-500 hover:scale-125 transition-transform duration-300 wave">
+    <ion-icon name="mail-outline"></ion-icon>
+  </a>
+
+  <a href="https://github.com/OJOK314" target="_blank" class="text-3xl text-gray-800 hover:scale-125 transition-transform duration-300 wave">
     <ion-icon name="logo-github"></ion-icon>
   </a>
 </div>
 
-<!----Button------>
-<div>
-<button
-  class="px-6 py-3 mb-3 bg-blue-600 text-white font-semibold rounded-full shadow-md ml-6
-         hover:bg-blue-700 hover:scale-110 transition-transform duration-300
-         animate-bounce"
->
-  Say Hello
-</button>
+<!-- Button -->
+<div class="text-center mt-6 fade-in-up">
+  <a href="mailto:ojokalferd1996@gmail.com" target="_blank">
+    <button
+      class="px-6 py-3 mb-3 bg-blue-600 text-white font-semibold rounded-full shadow-md
+             hover:bg-blue-700 hover:scale-110 transition-transform duration-300 animate-pulse"
+    >
+      Say Hello
+    </button>
+  </a>
 </div>
+
 
 
 </section>
@@ -314,9 +370,9 @@ I specialize in crafting mobile-first, user-centric experiences using cutting-ed
 
 
 
-<footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4 p-6">
+<footer class="bg-white rounded-lg shadow-sm dark:bg-blue-900 w-full m-4 p-6">
   <div class="w-full max-w-screen-xl mx-auto text-center">
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-bule-700 lg:my-8" />
 
     <p class="text-sm text-gray-500 dark:text-gray-400">
       Made with <span class="text-pink-500">❤</span> creativity and lots of Coffee by 
